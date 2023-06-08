@@ -6,20 +6,26 @@ import { Equal, Expect } from "./helpers/type-utils";
  * make it more DRY?
  */
 
-interface User {
-  id: string;
+// initialize type Base where we declare the id as string
+// we then extend Base to User, Post, Comment to share same "id" property from Base
+type Base = {
+  id: string, 
+}; 
+
+interface User extends Base {
+  // id: string;
   firstName: string;
   lastName: string;
 }
 
-interface Post {
-  id: string;
+interface Post extends Base {
+  // id: string;
   title: string;
   body: string;
 }
 
-interface Comment {
-  id: string;
+interface Comment extends Base {
+  // id: string;
   comment: string;
 }
 
