@@ -7,8 +7,12 @@ interface User {
 }
 
 const createThenGetUser = async (
-  createUser: unknown,
-  getUser: unknown,
+  // TODO
+  // function createUser returns a Promise of type "string"
+  createUser: () => Promise<string>,
+  // TODO
+  // function getUser takes in an id of type "string" and returns a Promise of "User" 
+  getUser: (id: string) => Promise<User> ,
 ): Promise<User> => {
   const userId: string = await createUser();
 

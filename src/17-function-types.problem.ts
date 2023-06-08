@@ -3,7 +3,12 @@ import { Equal, Expect } from "./helpers/type-utils";
 /**
  * How do we type onFocusChange?
  */
-const addListener = (onFocusChange: unknown) => {
+
+// onFocusChange is a ReactDOM element event, where an element inside it gets focus
+// opposite is onBlur, which blurs the element 
+// isFocused: boolean returns void 
+
+const addListener = (onFocusChange: (isFocused: boolean) => void) => {
   window.addEventListener("focus", () => {
     onFocusChange(true);
   });
