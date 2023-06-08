@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
 
-// optional property "?" for "last" param since we may not use this params
+// optional property "?" for "last" param since we may not use this param
 export const getName = (params: { first: string, last?: string }) => {
   if (params.last) {
     return `${params.first} ${params.last}`;

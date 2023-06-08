@@ -1,7 +1,8 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "./helpers/type-utils";
 
-const guitarists = new Set();
+// we explicitly add <string> to Set's since we know we'll include strings 
+const guitarists = new Set<string>();
 
 guitarists.add("Jimi Hendrix");
 guitarists.add("Eric Clapton");
@@ -21,3 +22,13 @@ it("Should be typed as an array of strings", () => {
 
   type tests = [Expect<Equal<typeof guitaristsAsArray, string[]>>];
 });
+
+const integers = new Set<number>(); 
+
+integers.add(5); 
+integers.add(10); 
+
+it("Should contain integers 5 and 10", () => {
+  expect(integers.has(5)).toEqual(true); 
+});
+

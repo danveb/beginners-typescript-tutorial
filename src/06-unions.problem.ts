@@ -8,7 +8,10 @@ interface User {
    * - 'user'
    * - 'super-admin'
    */
-  role: string;
+
+  // be explicit with role of User, which are all strings
+  // initialize union of admin, user and super-admin only
+  role: "admin" | "user" | "super-admin";
 }
 
 export const defaultUser: User = {

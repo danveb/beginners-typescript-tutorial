@@ -3,7 +3,7 @@ interface User {
   firstName: string;
   lastName: string;
   role: "admin" | "user" | "super-admin";
-  posts: Post;
+  posts: Post[]; // explicitly add [] for Post since it's an array of posts
 }
 
 interface Post {

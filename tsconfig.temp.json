@@ -14,6 +14,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "/Users/dbae/Documents/code/learn/typescript/beginners-typescript-tutorial/src/03-optional-properties.solution.ts"
+    "/Users/dbae/Documents/code/learn/typescript/beginners-typescript-tutorial/src/10-set.problem.ts"
   ]
 }
