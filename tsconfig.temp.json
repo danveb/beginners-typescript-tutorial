@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "types": [
+      "vitest/importMeta"
+    ],
+    "target": "es2020",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "/Users/dbae/Documents/code/learn/typescript/beginners-typescript-tutorial/src/03-optional-properties.solution.ts"
+  ]
+}
